@@ -51,7 +51,7 @@ export const HomePage = (props: any) => {
         </p>
 
         {persons.length > 1 && count < persons.length && (
-          <Button color='danger' onClick={() => history.push('/reservation')}>Generate gift recipient</Button>
+          <Button color='danger' onClick={() => history.replace('/reservation')}>Generate gift recipient</Button>
         )
         }
 
