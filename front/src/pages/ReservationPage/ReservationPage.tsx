@@ -52,7 +52,7 @@ export const ReservationPage = (props: any) => {
   return (
     <>
       <HeaderBar />
-      <div style={{ padding: 15, height: 'calc(100vh - 120px)', overflow: 'scroll' }}>
+      <div style={{ paddingLeft: 15, paddingRight: 15, height: 'calc(100vh - 120px)', overflow: 'scroll' }}>
         <p style={{ textAlign: 'center', fontSize: '120%' }}>
           Select <b>your name</b> so that the system excludes you from this random generation session.
         </p>
@@ -60,15 +60,19 @@ export const ReservationPage = (props: any) => {
           This is necessary in order not to&nbsp;give a&nbsp;gift to&nbsp; yourself&nbsp;:)
         </p>
 
-        <PickerView
-          style={{ marginBottom: 15 }}
-          columns={basicColumns}
-          value={value}
-          onChange={(val, extend) => {
-            setValue(val)
+        <div>
+          <PickerView
+            style={{ marginBottom: 25 }}
+            columns={basicColumns}
+            value={value}
+            onChange={(val, extend) => {
+              setValue(val)
 
-          }}
-        />
+            }}
+          />
+        </div>
+
+
 
         <Button
           block

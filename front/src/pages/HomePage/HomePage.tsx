@@ -36,7 +36,7 @@ export const HomePage = (props: any) => {
       <div style={{ boxSizing: 'border-box', paddingTop: 0 }}>
         <Lottie options={animationOptions} height={120} width={120} speed={1.5} />
       </div>
-      <div style={{ textAlign: 'center', paddingLeft: 20, paddingRight: 20, fontSize: '110%' }}>
+      <div style={{ textAlign: 'center', paddingLeft: 20, paddingRight: 20, fontSize: '100%' }}>
         <h2>Hi, friend!</h2>
         <p>Please&nbsp;click the&nbsp;red&nbsp;button below and follow the&nbsp;instructions.</p>
         <p>

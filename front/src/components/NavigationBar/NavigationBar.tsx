@@ -42,6 +42,10 @@ export const NavigationBar = (props: any) => {
   const currentTab = useCurrentTab();
   const counts = useReservationCounts();
 
+
+
+  if (!currentTab.key) return null;
+
   if (counts > 0) {
     tabs[2].badge = counts.toString();
   }
@@ -55,7 +59,8 @@ export const NavigationBar = (props: any) => {
     <div style={{
       position: 'absolute',
       bottom: 0,
-      width: '100%'
+      width: '100%',
+      zIndex: 100
     }}>
       <TabBar activeKey={currentTab.key} onChange={handleChange}>
         {tabs.map(item => (

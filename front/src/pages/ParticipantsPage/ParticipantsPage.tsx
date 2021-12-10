@@ -35,7 +35,7 @@ export const ParticipantsPage = (props: any) => {
       <HeaderBar />
 
 
-      <div style={{ padding: 15, height: 'calc(100vh - 120px)', overflow: 'scroll' }}>
+      <div style={{ padding: 15, height: 'calc(100vh - 155px)', overflowY: 'scroll' }}>
         <Collapse
           accordion={true}
           activeKey={selected} onChange={(e) => {
