@@ -40,8 +40,8 @@ export const HomePage = (props: any) => {
         <h2>Hi, friend!</h2>
         <p>Please&nbsp;click the&nbsp;red&nbsp;button below and follow the&nbsp;instructions.</p>
         <p>
-          You&nbsp;will be&nbsp;given a&nbsp;randomly selected&nbsp;name of&nbsp;the&nbsp;secret
-          santa app participant to&nbsp;whom you should&nbsp;send&nbsp;a&nbsp;New&nbsp;Year&nbsp;gift.</p>
+          You&nbsp;will be&nbsp;given a&nbsp;randomly selected&nbsp;name of&nbsp;the&nbsp;Secret
+          Santa App participant to&nbsp;whom you should&nbsp;send&nbsp;a&nbsp;New&nbsp;Year&nbsp;gift.</p>
 
         <p><b>Remember carefully the provided name</b> and&nbsp;don't tell&nbsp;it&nbsp;anyone.</p>
 
