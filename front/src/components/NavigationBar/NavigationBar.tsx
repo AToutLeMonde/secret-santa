@@ -9,7 +9,7 @@ import { RiTeamFill } from 'react-icons/ri';
 import { Badge, TabBar } from 'antd-mobile'
 
 
-import { useCurrentTab, usePersons, useReservationCounts } from 'src/model';
+import { useCurrentTab, usePersons, useReservationCounts, useReservedPerson } from 'src/model';
 import { useHistory } from 'react-router-dom';
 
 const tabs = [
@@ -42,9 +42,9 @@ export const NavigationBar = (props: any) => {
   const currentTab = useCurrentTab();
   const counts = useReservationCounts();
 
+  const reservedPerson = useReservedPerson();
 
-
-  if (!currentTab.key) return null;
+  if (!currentTab.key && !reservedPerson) return null;
 
   if (counts > 0) {
     tabs[2].badge = counts.toString();

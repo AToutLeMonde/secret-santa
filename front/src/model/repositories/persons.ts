@@ -36,10 +36,12 @@ export const getPersons = async (): Promise<Person[]> => {
 
 export const updatePerson = async (data: Person) => {
   const myDoc = doc(db, COLLECTION_NAME, data.id)
-  const newFields: Record<string, string> = {};
+  const newFields: Record<string, any> = {};
   for (let key in data) {
     if (key !== 'id') newFields[key] = data[key];
   }
+
+  newFields['isSystem'] = false;
   //console.log('updatePerson', newFields)
   await updateDoc(myDoc, newFields);
 }
